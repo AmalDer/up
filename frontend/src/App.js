@@ -5,6 +5,8 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Students from './components/Students';
 import Groups from './components/Groups';
 
+
+
 function App() {
   return (
     <Router>
@@ -13,7 +15,7 @@ function App() {
         <HomePage/>
         <Routes>
           <Route path='/students/' element={<Students/>} />
-          <Route path='/groups' element={<Groups/>} />
+          <Route path='/groups/' element={<Groups/>} />
         </Routes>
       </div>
     </Router>

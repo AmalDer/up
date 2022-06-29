@@ -6,7 +6,7 @@ function Students(){
     const [studentsList, setStudentsList] = useState([]);
 
     useEffect( ()=> {
-        Axios.get("http://localhost:4000/students/").then((response) =>{
+        Axios.get("localhost:4000/student/").then((response) =>{
             setStudentsList(response.data);
             console.log(response.data);
         });

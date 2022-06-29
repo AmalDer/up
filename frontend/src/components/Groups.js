@@ -32,4 +32,4 @@ function Groups(){
     );
 }
 
-export default Students;
+export default Groups;

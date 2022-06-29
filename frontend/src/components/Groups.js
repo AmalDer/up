@@ -6,7 +6,7 @@ function Groups(){
     const [groupsList, setGroupsList] = useState([]);
 
     useEffect( ()=> {
-        Axios.get("localhost:4000/group/").then((response) =>{
+        Axios.get("localhost:4000/group").then((response) =>{
             setGroupsList(response.data);
             console.log(response.data);
         });

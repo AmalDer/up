@@ -11,11 +11,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <h1>Gestion de groupes d'élèves</h1> */}
+        { <h1>Gestion de groupes d'élèves</h1> }
         <HomePage/>
         <Routes>
-          <Route path='/students/' element={<Students/>} />
-          <Route path='/groups/' element={<Groups/>} />
+          <Route path='/student' element={<Students/>} />
+          <Route path='/group' element={<Groups/>} />
         </Routes>
       </div>
     </Router>

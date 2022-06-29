@@ -5,10 +5,10 @@ function HomePage(){
     return(
         <div>
             <div>
-                <Link to = '/groups'>Groupes</Link>
+                <Link to = '/group'>Groupes</Link>
             </div>
             <div>
-                <Link to = '/students/'>Liste d'élèves</Link>
+                <Link to = '/student'>Liste d'élèves</Link>
             </div>
         </div>
     );

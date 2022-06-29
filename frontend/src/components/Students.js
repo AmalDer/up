@@ -9,6 +9,17 @@ function Students(){
 
     const [studentsList, setStudentsList] = useState([]);
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    useEffect( ()=> {
+        Axios.get("localhost:4000/student").then((response) =>{
+            setStudentsList(response.data);
+            console.log(response.data);
+        });
+    }, [] );
+=======
+>>>>>>> Stashed changes
     const fetchStudents = async () => {
         const data = await fetch('/student/');
         const studentt = await data.json();
@@ -21,6 +32,10 @@ function Students(){
     //         console.log(response.data);
     //     });
     // }, [] );
+<<<<<<< Updated upstream
+=======
+>>>>>>> b0e464404abb7af61e440c60e2858ed9faa75234
+>>>>>>> Stashed changes
 
     return(
         <section>

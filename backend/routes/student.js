@@ -25,10 +25,15 @@ router.get("/", function(request, response, next){
 });
 
 //to add the group created to the database
-router.get("/addStudent", function(request, response, next){
+// router.post("/addStudent", function(request, response, next){
 
-	response.render("student", {title:'Insert Data into MySQL', action:'add'});
+// 	const 
+// 	const sqlInsert = "INSERT INTO group(idgroup, groupname) VALUES (?,?)"
+// 	database.query(sqlInsert,[idgroup, groupname], (err,result) => {
 
-});
+// 	})
+// 	// response.render("student", {title:'Insert Data into MySQL', action:'add'});
+
+// });
 
 module.exports = router;

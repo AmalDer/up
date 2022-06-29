@@ -3,14 +3,24 @@ import Axios from "axios";
 
 function Students(){
 
+    useEffect(()=>{
+        fetchStudents();
+    }, []);
+
     const [studentsList, setStudentsList] = useState([]);
 
-    useEffect( ()=> {
-        Axios.get("localhost:4000/student/").then((response) =>{
-            setStudentsList(response.data);
-            console.log(response.data);
-        });
-    }, [] );
+    const fetchStudents = async () => {
+        const data = await fetch('/student/');
+        const studentt = await data.json();
+        setStudentsList(studentt);
+    };
+
+    // useEffect( ()=> {
+    //     Axios.get("localhost:4000/student/").then((response) =>{
+    //         setStudentsList(response.data);
+    //         console.log(response.data);
+    //     });
+    // }, [] );
 
     return(
         <section>

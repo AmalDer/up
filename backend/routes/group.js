@@ -23,4 +23,12 @@ router.get("/", function(request, response, next){
 
 });
 
+// //to add the group created to the database
+// router.get("/addGroup", function(request, response){
+
+
+// 	// response.render("student", {title:'Insert Data into MySQL', action:'add'});
+
+// });
+
 module.exports = router;
